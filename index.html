@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descubre productos ecológicos, reutilizables y sostenibles en EcoMarket.">
+    <meta name="theme-color" content="#216e48">
     <title>EcoMarket | Compra responsable</title>
 
     <link rel="stylesheet" href="css/main.css">
@@ -11,4 +13,80 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
 </head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a class="logo" href="index.html" aria-label="EcoMarket, inicio">
+                <span class="logo-icon" aria-hidden="true">♻</span>
+                <span>EcoMarket</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a class="nav-link active" href="index.html">Inicio</a>
+                <a class="nav-link" href="views/productos.html">Productos</a>
+                <a class="nav-link" href="views/sobre-nosotros.html">Nosotros</a>
+                <a class="nav-link" href="views/contacto.html">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="header-action" href="views/productos.html#buscador"
+                   aria-label="Buscar productos" title="Buscar productos">
+                    <span aria-hidden="true">⌕</span>
+                </a>
+
+                <a class="header-action" href="views/productos.html"
+                   aria-label="Ver catálogo" title="Ver catálogo">
+                    <span aria-hidden="true">♡</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="eyebrow">UN ESTILO DE VIDA MÁS CONSCIENTE</span>
+
+                    <h1>Compra responsable,<br>vive sostenible.</h1>
+
+                    <p>
+                        Descubre productos reutilizables y alternativas
+                        ecológicas para cuidar de ti y de nuestro planeta.
+                    </p>
+
+                    <a class="btn btn-primary"
+                       href="views/productos.html">
+                        Explorar productos
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="img/hero/eco-hero.jpg"
+                        alt="Productos reutilizables y elementos naturales"
+                        fetchpriority="high">
+                </div>
+
+            </div>
+        </section>
+
+      </main>
+
+    <footer>
+        <!-- Aquí irá la información de contacto -->
+    </footer>
+
+</body>
+</html>
+
+
 
