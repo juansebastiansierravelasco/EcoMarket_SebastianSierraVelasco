@@ -142,3 +142,62 @@
 .benefit p {
     font-size: 0.84rem;
 }
+/* SECCIONES */
+
+.section-padding {
+    padding-block: 75px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.section-heading h2 {
+    margin-block: 10px;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.section-heading p {
+    font-size: 0.98rem;
+}
+
+.text-link {
+    flex-shrink: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* CUADRÍCULA DE PRODUCTOS */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* LLAMADO A LA ACCIÓN */
+
+.eco-cta {
+    padding-block: 48px;
+    background-color: var(--color-secondary);
+}
+
+.eco-cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.eco-cta h2 {
+    margin-block: 10px;
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+.eco-cta p {
+    max-width: 570px;
+}
