@@ -1,0 +1,32 @@
+.container {
+    width: min(1180px, calc(100% - 40px));
+    margin-inline: auto;
+}
+/* ENCABEZADO */
+.site-header{
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+}
+.header-content{
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--color-primary);
+    font-size: 1.45rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+.logo-icon{
+    font-size: 1.8rem;
+}
+
+.main-nav{
+    
+}
