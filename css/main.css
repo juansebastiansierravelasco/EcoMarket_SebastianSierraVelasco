@@ -52,4 +52,27 @@ button,a{
     -webkit-tap-highlight-color: transparent;
 }
 
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible
+{outline: 3px solid #75B98B;
+    outline-offset: 3px;
+}
+h1,h2,h3{
+    line-height:1.2;
+    font-weight:700;
+}
 
+p{
+    color:var(--color-muted);
+}
+ul {
+    list-style: none;
+}
+
+::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
