@@ -25,3 +25,31 @@
     padding: 0%;
     margin: 0%;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+font-family: var(--font-main);
+background: var(--color-background);
+color: var(--color-text);
+line-height: 1.6;
+min-width: 320px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+a{
+    text-decoration:none;
+    color: inherit
+}
+
+button,a{
+    -webkit-tap-highlight-color: transparent;
+}
+
+
