@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Productos | EcoMarket</title>
+    <meta name="description" content="Descubre productos sostenibles para tu hogar y tu vida diaria.">
+
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/animations.css">
 </head>
 
-
 <body>
-<header class="site-header">
+
+    <!-- ENCABEZADO -->
+    <header class="site-header">
         <div class="container header-content">
 
             <a class="logo" href="index.html" aria-label="EcoMarket, inicio">
@@ -21,8 +24,8 @@
             </a>
 
             <nav class="main-nav" aria-label="Navegación principal">
-                <a class="nav-link active" href="index.html">Inicio</a>
-                <a class="nav-link" href="views/productos.html">Productos</a>
+                <a class="nav-link " href="index.html">Inicio</a>
+                <a class="nav-link active" href="views/productos.html">Productos</a>
                 <a class="nav-link" href="views/sobre-nosotros.html">Nosotros</a>
                 <a class="nav-link" href="views/contacto.html">Contacto</a>
             </nav>
@@ -30,7 +33,7 @@
             <div class="header-actions">
                 <a class="header-action" href="views/productos.html#buscador"
                    aria-label="Buscar productos" title="Buscar productos">
-                    <span aria-hidden="true">⌕</span>
+                    <span aria-hidden="true"> ⌕ </span>
                 </a>
 
                 <a class="header-action" href="views/productos.html"
@@ -41,15 +44,27 @@
 
         </div>
     </header>
-<main class="container">
-    <section class="products-section">
-       <h1>Nuestros Productos</h1>
+    <main class="container">
+        <section class="catalogo">
+            <h1>Nuestros Productos</h1>
+            <p>Encuentra productos sosenibles para tu dia a dia</p>
+        <form class="buscador" action="#" method="get" >
+            <label for="buscar-producto">Buscador productos</label>
 
-    </section>
+            <input
+            type="search"
+            id="buscar-producto"
+            name="buscar"
+            placeholder="Ej. botella reutilizable"
+            >
+            <button type="submit">Buscar</button>
+        </form>
 
 
-</main>
+        </section>
 
-    
+
+    </main>
+
 </body>
 </html>
