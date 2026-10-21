@@ -1,0 +1,75 @@
+
+/* ========================================
+   ANIMACIONES Y ESTADOS INTERACTIVOS
+   ======================================== */
+
+.btn,
+.header-action,
+.nav-link,
+.text-link {
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.btn-light:hover {
+    background-color: var(--color-beige);
+    transform: translateY(-2px);
+}
+
+.header-action:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.product-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 26px rgba(25, 65, 40, 0.13);
+}
+
+.product-image img {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-card,
+    .product-image img,
+    .btn,
+    .header-action,
+    .nav-link {
+        transition: none;
+    }
+
+    .product-card:hover,
+    .product-card:hover .product-image img,
+    .btn:hover {
+        transform: none;
+    }
+}
