@@ -156,3 +156,40 @@
 .buscador button:hover {
     background-color: var(--color-primary-dark);
 }
+
+
+/* Panel de filtros */
+.filtros {
+    padding: 20px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+}
+
+.filtros h2 {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+
+.filtros fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: none;
+}
+
+.filtros legend {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.filtros label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.filtros input {
+    accent-color: var(--color-primary);
+}
