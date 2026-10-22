@@ -127,3 +127,33 @@ ul {
 .about-page p {
     overflow-wrap: break-word;
 }
+
+/* Estilos principales de Contacto */
+
+.contact-main {
+    color: #252D27;
+    background-color: #FCFCF8;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-hero {
+    padding: 55px 20px;
+    text-align: center;
+    background-color: #E4F1E7;
+}
+
+.contact-hero h1 {
+    color: #174B32;
+    font-size: 3rem;
+}
+
+.contact-section {
+    padding: 55px 0;
+}
