@@ -191,3 +191,47 @@ ul {
     outline: 2px solid #216E48;
     outline-offset: 2px;
 }
+
+/* Campos del formulario */
+
+.contact-field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #DCE5DC;
+    border-radius: 7px;
+    background-color: #FCFCF8;
+    color: #252D27;
+    font: inherit;
+}
+
+/* Cuando el usuario selecciona un campo */
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+    outline: 2px solid #216E48;
+    outline-offset: 2px;
+}
+
+/* Botón para enviar */
+
+.contact-submit {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #216E48;
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto al pasar el ratón */
+
+.contact-submit:hover {
+    background-color: #174B32;
+}
