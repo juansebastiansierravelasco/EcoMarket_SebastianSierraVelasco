@@ -370,3 +370,136 @@
         gap: 8px;
     }
 }
+/* Distribución del catálogo */
+.catalogo {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.catalogo-contenido {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+    margin-top: 32px;
+}
+
+.productos {
+    min-width: 0;
+}
+
+.productos > h2 {
+    margin-bottom: 20px;
+}
+
+/* Tarjetas del catálogo */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.product-card {
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 18px;
+}
+
+.product-info h3 {
+    font-size: 1.05rem;
+}
+
+.product-price {
+    color: var(--color-primary-dark);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.product-availability {
+    color: var(--color-success);
+    font-size: 0.9rem;
+}
+
+.product-info .btn {
+    margin-top: 8px;
+}
+
+/* Campos del panel de filtros */
+.filtros fieldset + fieldset {
+    margin-top: 24px;
+}
+
+.filtros input[type="number"] {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+}
+
+/* Paginación */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+.paginacion a {
+    padding: 8px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+}
+
+.paginacion a[aria-current="page"] {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.paginacion a:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Adaptación a tabletas */
+@media (max-width: 900px) {
+    .catalogo-contenido {
+        grid-template-columns: 200px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .catalogo-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+}
