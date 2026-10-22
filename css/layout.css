@@ -506,53 +506,6 @@
 /*=========================================
    SOBRE NOSOTROS - ESTRUCTURA
    ========================================= */
-
-/* Encabezado */
-
-.about-header {
-    background-color: var(--color-white, #FFFFFF);
-    border-bottom: 1px solid var(--color-border, #DCE5DC);
-}
-
-.about-header-inner {
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.about-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 22px;
-}
-
-.about-header-actions {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-/* Portada */
-
-.about-hero {
-    padding: 65px 0;
-    background-color: var(--color-secondary, #E4F1E7);
-    text-align: center;
-}
-
-.about-hero .about-container {
-    max-width: 850px;
-}
-
-.about-hero-description {
-    max-width: 720px;
-    margin: 0 auto;
-}
-
 /* Historia */
 
 .about-story {
@@ -647,35 +600,6 @@
     justify-content: space-between;
     gap: 30px;
 }
-
-/* Pie de página */
-
-.about-footer {
-    padding-top: 45px;
-    background-color: #183D2B;
-    color: var(--color-white, #FFFFFF);
-}
-
-.about-footer-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 40px;
-    padding-bottom: 35px;
-}
-
-.about-footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 9px;
-}
-
-.about-footer-bottom {
-    padding: 16px 5%;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-}
-
 /* Adaptación para tabletas */
 
 @media (max-width: 900px) {
