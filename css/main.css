@@ -157,3 +157,37 @@ ul {
 .contact-section {
     padding: 55px 0;
 }
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 19px;
+}
+
+.contact-field label {
+    color: #174B32;
+    font-weight: 600;
+}
+
+.contact-field select,
+.contact-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #DCE5DC;
+    border-radius: 7px;
+    background-color: #FCFCF8;
+    color: #252D27;
+    font: inherit;
+}
+
+.contact-field textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contact-field select:focus,
+.contact-field textarea:focus {
+    outline: 2px solid #216E48;
+    outline-offset: 2px;
+}
