@@ -66,7 +66,7 @@ EcoMarket/
 
 ### Sitio publicado
 
-Enlace: [Pegar aquí la URL pública de EcoMarket]
+https://ecomarketproyecto.netlify.app/
 
 ## 6. Capturas de pantalla
 
