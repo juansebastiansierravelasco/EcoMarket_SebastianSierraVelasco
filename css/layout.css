@@ -370,3 +370,261 @@
         gap: 8px;
     }
 }
+
+
+
+/* =========================================
+   SOBRE NOSOTROS - ESTRUCTURA
+   ========================================= */
+
+/* Encabezado */
+
+.about-header {
+    background-color: var(--color-white, #FFFFFF);
+    border-bottom: 1px solid var(--color-border, #DCE5DC);
+}
+
+.about-header-inner {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.about-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.about-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Portada */
+
+.about-hero {
+    padding: 65px 0;
+    background-color: var(--color-secondary, #E4F1E7);
+    text-align: center;
+}
+
+.about-hero .about-container {
+    max-width: 850px;
+}
+
+.about-hero-description {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* Historia */
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.about-story-image {
+    min-height: 360px;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: var(--color-secondary, #E4F1E7);
+}
+
+.about-story-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+}
+
+.about-story-content {
+    padding: 10px 0;
+}
+
+/* Principios */
+
+.about-principles {
+    padding: 70px 0;
+    background-color: var(--color-secondary, #E4F1E7);
+}
+
+.about-section-heading {
+    max-width: 720px;
+    margin: 0 0 32px;
+}
+
+.about-principles .about-section-heading,
+.about-testimonials .about-section-heading {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.about-principles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Valores */
+
+.about-values {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Testimonios */
+
+.about-testimonials {
+    padding: 70px 0;
+    background-color: var(--color-beige, #F5F5DC);
+}
+
+.about-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Invitación final */
+
+.about-cta {
+    padding: 55px 0;
+    background-color: var(--color-primary, #216E48);
+    color: var(--color-white, #FFFFFF);
+}
+
+.about-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Pie de página */
+
+.about-footer {
+    padding-top: 45px;
+    background-color: #183D2B;
+    color: var(--color-white, #FFFFFF);
+}
+
+.about-footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+.about-footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.about-footer-bottom {
+    padding: 16px 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Adaptación para tabletas */
+
+@media (max-width: 900px) {
+    .about-header-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .about-nav {
+        gap: 14px;
+    }
+
+    .about-story {
+        gap: 30px;
+    }
+
+    .about-values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 600px) {
+    .about-header-inner {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .about-nav {
+        gap: 10px 16px;
+    }
+
+    .about-header-actions {
+        justify-content: center;
+    }
+
+    .about-hero {
+        padding: 45px 0;
+    }
+
+    .about-story {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .about-story-image,
+    .about-story-image img {
+        min-height: 250px;
+    }
+
+    .about-principles,
+    .about-testimonials {
+        padding: 45px 0;
+    }
+
+    .about-values {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .about-principles-grid,
+    .about-values-grid,
+    .about-testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .about-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
