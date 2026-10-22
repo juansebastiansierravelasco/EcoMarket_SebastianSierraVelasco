@@ -72,11 +72,39 @@
                         required
                         >
                     </div>
+                    <div class="contact-field">
+                     <label for="asunto">Asunto</label>
+
+                    <select id="asunto" name="asunto" required>
+                     <option value="" disabled selected>
+                    Selecciona un asunto
+                    </option>
+
+                    <option value="productos">Consulta sobre productos</option>
+                     <option value="pedido">Consulta sobre un pedido</option>
+                     <option value="sugerencia">Sugerencia</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                    </div>
+
+                    <div class="contact-field">
+                  <label for="mensaje">Mensaje</label>
+
+                <textarea
+                 id="mensaje"
+                 name="mensaje"
+                 rows="5"
+                 placeholder="Escribe tu mensaje aquí..."
+                 required
+                 ></textarea>
+</div>
+
+
                      <button type="submit" class="contact-submit">
                       Enviar mensaje
                     </button>
-                     </form>
-                     </div>
+                </form>
+                </div>
 
 
 
