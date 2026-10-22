@@ -193,3 +193,219 @@
 .filtros input {
     accent-color: var(--color-primary);
 }
+/* =========================================
+   SOBRE NOSOTROS - COMPONENTES
+   ========================================= */
+
+/* Logo */
+
+.about-logo {
+    color: var(--color-primary, #216E48);
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    white-space: nowrap;
+}
+
+.about-logo span {
+    color: var(--color-primary-dark, #174B32);
+}
+
+.about-logo-footer {
+    color: var(--color-white, #FFFFFF);
+}
+
+.about-logo-footer span {
+    color: #C6E4C9;
+}
+
+/* Navegación */
+
+.about-nav a,
+.about-search-link {
+    color: var(--color-text, #252D27);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.about-nav a[aria-current="page"] {
+    color: var(--color-primary, #216E48);
+    border-bottom: 2px solid var(--color-primary, #216E48);
+    padding-bottom: 5px;
+}
+
+.about-cart-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--color-border, #DCE5DC);
+    border-radius: 50%;
+    color: var(--color-primary, #216E48);
+    font-size: 1.4rem;
+}
+
+/* Portada */
+
+.about-hero h1 {
+    margin: 0 0 18px;
+    color: var(--color-primary-dark, #174B32);
+    font-size: clamp(2.1rem, 5vw, 3.2rem);
+    line-height: 1.2;
+}
+
+.about-hero-description {
+    color: var(--color-text, #252D27);
+    font-size: 1.05rem;
+}
+
+/* Historia */
+
+.about-story-content h2,
+.about-section-heading h2,
+.about-cta h2 {
+    margin: 0 0 18px;
+    color: var(--color-primary-dark, #174B32);
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    line-height: 1.25;
+}
+
+.about-story-content > p:not(.about-eyebrow) {
+    margin: 0 0 17px;
+    color: var(--color-text, #252D27);
+}
+
+.about-section-heading > p:not(.about-eyebrow) {
+    color: var(--color-text, #252D27);
+}
+
+/* Botones */
+
+.about-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 22px;
+    border: 2px solid var(--color-primary, #216E48);
+    border-radius: 7px;
+    background-color: var(--color-primary, #216E48);
+    color: var(--color-white, #FFFFFF);
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-button-light {
+    flex-shrink: 0;
+    border-color: var(--color-white, #FFFFFF);
+    background-color: var(--color-white, #FFFFFF);
+    color: var(--color-primary-dark, #174B32);
+}
+
+/* Tarjetas de misión y visión */
+
+.about-principle-card {
+    padding: 30px;
+    border: 1px solid var(--color-border, #DCE5DC);
+    border-radius: 12px;
+    background-color: var(--color-white, #FFFFFF);
+    box-shadow: 0 4px 14px rgba(23, 75, 50, 0.06);
+}
+
+.about-icon {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 2.2rem;
+}
+
+.about-principle-card h3,
+.about-value-card h3 {
+    margin: 0 0 12px;
+    color: var(--color-primary-dark, #174B32);
+    font-size: 1.25rem;
+}
+
+.about-principle-card p,
+.about-value-card p {
+    margin: 0;
+    color: var(--color-text, #252D27);
+}
+
+/* Tarjetas de valores */
+
+.about-value-card {
+    padding: 25px 20px;
+    border: 1px solid var(--color-border, #DCE5DC);
+    border-radius: 12px;
+    background-color: var(--color-white, #FFFFFF);
+    text-align: center;
+}
+
+/* Tarjetas de testimonios */
+
+.about-testimonial-card {
+    padding: 28px;
+    border: 1px solid var(--color-border, #DCE5DC);
+    border-radius: 12px;
+    background-color: var(--color-white, #FFFFFF);
+}
+
+.about-quote {
+    display: block;
+    color: var(--color-primary, #216E48);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.about-testimonial-card blockquote {
+    margin: 10px 0 18px;
+    color: var(--color-text, #252D27);
+    font-size: 1.05rem;
+}
+
+.about-testimonial-author {
+    margin: 0;
+    color: var(--color-primary-dark, #174B32);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Invitación final */
+
+.about-cta .about-eyebrow {
+    color: #D8EBDD;
+}
+
+.about-cta h2 {
+    max-width: 650px;
+    color: var(--color-white, #FFFFFF);
+}
+
+.about-cta-inner > div > p:last-child {
+    margin-bottom: 0;
+    color: #F0F7F1;
+}
+
+/* Pie de página */
+
+.about-footer-column h2 {
+    margin: 0 0 7px;
+    color: #D8EBDD;
+    font-size: 1.05rem;
+}
+
+.about-footer-column a {
+    color: var(--color-white, #FFFFFF);
+    font-size: 0.93rem;
+}
+
+.about-footer-brand p {
+    max-width: 320px;
+    color: #E2ECE3;
+}
+
+.about-footer-bottom p {
+    margin: 0;
+    color: #E2ECE3;
+    font-size: 0.88rem;
+}
